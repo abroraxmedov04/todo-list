@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>to-do list</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-box">
+            <div class="todo-box__header">
+                <form class="todo-header__form">
+                    <input type="text" class="todo-input" placeholder="Enter a task..." aria-label="Enter a task..." />
+                    <button class="todo-form-btn">🚀</button>
+                </form>
+            </div>
+            <div class="todo-box__body todo-body">
+                <p class="todo-body__counter">Tasks to do - 4</p>
+                <ul class="task-list">
+                    <strong id="warning" class="warning">no tasks here yet</strong>
+                </ul>
+            </div>
+            <div class="todo-box__footer">
+                <p class="todo-body__counter-completed">Complated-task - 1</p>
+                <ul class="task-list-completed">
+                    <strong class="warning-completed">No completed tasks here yet</strong>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <template class="todo-task-template">
+        <li class="task-todo">
+            <p class="todo-text">To study React fundamentals</p>
+            <div class="todo-buttons-gr">
+                <button class="todo-complete todo-btn" data-complete-id="">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="todo-delete todo-btn" data-delete-btn="">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+        </li>
+    </template>
+
+    <template class="completed-tasks">
+        <li class="task-todo-completed">
+            <p class="todo-text-completed">To study React fundamentals</p>
+        </li>
+    </template>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
